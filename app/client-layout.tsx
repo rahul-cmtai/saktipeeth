@@ -3,7 +3,6 @@
 import type React from "react"
 
 import { Analytics } from "@vercel/analytics/next"
-import { useSearchParams } from "next/navigation"
 import { Suspense } from "react"
 
 export default function ClientLayout({
@@ -11,8 +10,6 @@ export default function ClientLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const searchParams = useSearchParams()
-
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>

@@ -21,7 +21,39 @@ export const metadata: Metadata = {
   description:
     "Experience the divine energy and spiritual awakening at Shree Mahavidya Shaktipeeth. A sacred place of worship, rituals, and spiritual transformation.",
   keywords: "Shaktipeeth, Mahavidya, Temple, Spiritual, Divine, Worship, Rituals",
-    generator: 'v0.app'
+  generator: "sakti peeth",
+  metadataBase: new URL("https://www.shreemahavidya.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: "Shree Mahavidya Shaktipeeth - Divine Spiritual Journey",
+    description:
+      "Experience the divine energy and spiritual awakening at Shree Mahavidya Shaktipeeth.",
+    siteName: "Shree Mahavidya Shaktipeeth",
+    images: [
+      {
+        url: "/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "Shree Mahavidya Shaktipeeth",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shree Mahavidya Shaktipeeth - Divine Spiritual Journey",
+    description:
+      "Experience the divine energy and spiritual awakening at Shree Mahavidya Shaktipeeth.",
+    images: ["/hero.png"],
+  },
+  icons: {
+    icon: "/placeholder-logo.svg",
+    shortcut: "/placeholder-logo.svg",
+    apple: "/placeholder-logo.png",
+  },
 }
 
 export default function RootLayout({

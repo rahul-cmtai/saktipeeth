@@ -25,7 +25,7 @@ export async function verifyRazorpayPayment(paymentId: string, orderId: string, 
   // Here you would verify the payment signature using Razorpay secret key
   // This is where you'd use the RAZORPAY_KEY_SECRET (server-only)
 
-  console.log("[v0] Payment verification:", { paymentId, orderId, signature })
+  console.log(" Payment verification:", { paymentId, orderId, signature })
 
   // For now, just return success
   // In production, implement proper signature verification

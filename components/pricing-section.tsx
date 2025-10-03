@@ -146,7 +146,7 @@ const handleRazorpayPayment = async (course: CourseLevel) => {
       description: config.description,
       image: config.image,
       handler: async (response: any) => {
-        console.log("[v0] Payment response:", response)
+        console.log("  Payment response:", response)
 
         // Verify payment on server
         try {
@@ -160,7 +160,7 @@ const handleRazorpayPayment = async (course: CourseLevel) => {
             alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`)
           }
         } catch (error) {
-          console.error("[v0] Payment verification failed:", error)
+          console.error("  Payment verification failed:", error)
           alert("Payment verification failed. Please contact support.")
         }
       },
@@ -178,7 +178,7 @@ const handleRazorpayPayment = async (course: CourseLevel) => {
     const razorpay = new window.Razorpay(options)
     razorpay.open()
   } catch (error) {
-    console.error("[v0] Payment initialization failed:", error)
+    console.error("  Payment initialization failed:", error)
     alert("Payment system is not configured. Please contact the administrator.")
   }
 }
